@@ -1,0 +1,34 @@
+{
+  "name": "display-images-api",
+  "version": "1.0.0",
+  "description": "GPMD Coding Task",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NukeTurtle/Display-images-API.git"
+  },
+  "keywords": [
+    "images",
+    "API",
+    "GPMD"
+  ],
+  "author": "Elvis Stiglic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NukeTurtle/Display-images-API/issues"
+  },
+  "homepage": "https://github.com/NukeTurtle/Display-images-API#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.1.0",
+    "uglify-js": "^3.14.2"
+  }
+}
