@@ -13,6 +13,7 @@ request.onload=function(){
     
     /* Create img element to hold main image */
     const newImage = document.createElement("img");
+    
     newImage.setAttribute("class", "image");
     newImage.alt = "Image from Unsplash";
     newImage.src = e.urls.small;
@@ -21,6 +22,13 @@ request.onload=function(){
     const userInfo = document.createElement("div");
     userInfo.setAttribute("class", "user");
     
+    /* Create a element to link to higher resolution image on Unsplash once image clicked */
+    const newImageLink = document.createElement("a");
+    newImageLink.setAttribute("class", "imageLink");
+    newImageLink.alt = "Image from Unsplash";
+    newImageLink.setAttribute("target", "_blank");
+    newImageLink.href = e.urls.full;
+
     /* Create img element to hold user profile image */
     const newProfileImage = document.createElement("img");
     newProfileImage.setAttribute("class", "profile");
@@ -43,7 +51,8 @@ request.onload=function(){
     gallery.appendChild(card);
     
     /* Wrap image and user class within card class */
-    card.appendChild(newImage);
+    card.appendChild(newImageLink);
+    newImageLink.appendChild(newImage);
     card.appendChild(userInfo);
 
     /* Wrap profile class and a element within user class */
