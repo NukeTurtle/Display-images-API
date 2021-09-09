@@ -9,9 +9,11 @@ gulp.task("default", function() {
     /* we merge all css files into one */
     .pipe(concat("style.css"))
     .pipe(dest("./prod/css/"))
+    
     /* we minify/uglify the css file for production environment */
     .pipe(minifyCss("./prod/css/style.css")),
     src("functions.js")
+    
     /* we minify/uglify the js file for production environment */
     .pipe(minifyJs())
     .pipe(gulp.dest("./prod/js/")));
