@@ -350,13 +350,13 @@ template {
 
 /* CUSTOM STYLES */
 
-*{
+html{
     font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
     background:#ddd;
 }
 main{
-    column-count: 3;
+    column-count: 4;
     margin: 1%;
     column-gap:1em;
 }
@@ -368,6 +368,7 @@ main{
     display:block;
     margin-bottom:0.3em;
     border-radius: 10px;
+    box-shadow: 25px 25px 20px -20px #555;
 }
 .user{
     display: flex;
@@ -397,6 +398,11 @@ a{
     color: #444;
 }
 
+@media screen and (max-width: 1080px){
+    main{
+        column-count: 3;
+    }
+}
 @media screen and (max-width: 850px){
     main{
         column-count: 2;
