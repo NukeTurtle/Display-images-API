@@ -6,4 +6,4 @@ request.onload=function(){JSON.parse(this.response).forEach(e=>{const t=document
 t.setAttribute("class","card");
 const n=document.createElement("img");
 n.src=e.urls.small;
-const s=document.createElement("a"),a=document.createElement("h3");a.textContent=e.user.first_name,s.appendChild(a),s.href=e.links.html,gallery.appendChild(t),t.appendChild(n),document.createElement("br"),t.appendChild(s)})},request.send();
+const s=document.createElement("a"),a=document.createElement("h3");a.textContent="©" + e.user.first_name,s.appendChild(a),s.href=e.links.html,gallery.appendChild(t),t.appendChild(n),document.createElement("br"),t.appendChild(s)})},request.send();
